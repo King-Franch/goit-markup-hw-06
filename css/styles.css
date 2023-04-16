@@ -1084,11 +1084,16 @@ textarea {
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #4d5ae5;
+  background-color: var(--button-color-text);
   border-radius: 4px;
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button-text:focus,
+.form-button-text:hover {
+  background-color: var(--button-focus-bg-color);
 }
 
 .modal-form-input-wrapper {
@@ -1098,10 +1103,11 @@ textarea {
 .input-form:hover ~ .modal-form-input-icon,
 .input-form:focus ~ .modal-form-input-icon {
   fill: #4d5ae5;
+  opacity: 1;
+  border-color: var(--button-focus-bg-color);
 }
 
 .input-form:hover,
 .input-form:focus {
-  opacity: 1;
   border: 1px solid #4d5ae5;
 }
