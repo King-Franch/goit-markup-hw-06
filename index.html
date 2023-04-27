@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-tablet.css" />
   </head>
 
   <body>
@@ -23,7 +23,7 @@
 
     <header class="nav-bar">
       <div class="nav-bar-container">
-        <div class="logo-nav">
+        <div class="logo-nav container">
           <a class="logo-top" href="./index.html"
             ><span class="web-top">web</span
             ><span class="studio-top">studio</span></a
@@ -69,7 +69,7 @@
     <main>
       <!--/////////////// BANNER (SECTION 1) ///////////////-->
 
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">
           Effective Solutions <br />
           for Your Business
@@ -81,11 +81,11 @@
         </div>
       </section>
 
-      <!--/////////////// ADVANTAGER (SECTION 2) ///////////////-->
+      <!--/////////////// ADVANTAGES (SECTION 2) ///////////////-->
 
       <section class="advantages">
         <h2></h2>
-        <div class="container">
+        <div class="container adv">
           <ul class="list advantages-list">
             <li class="advantages-text">
               <div class="advantages-icon-block">
@@ -93,7 +93,7 @@
                   <use href="./images/sprite.svg#icon-advantages_antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Strategy</h3>
+              <h3 class="title advantages-header-text">Strategy</h3>
               <p class="paragraph">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -106,7 +106,7 @@
                   <use href="./images/sprite.svg#icon-advantages_clock"></use>
                 </svg>
               </div>
-              <h3 class="title">Punctuality</h3>
+              <h3 class="title advantages-header-text">Punctuality</h3>
               <p class="paragraph">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -119,7 +119,7 @@
                   <use href="./images/sprite.svg#icon-advantages_diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Diligence</h3>
+              <h3 class="title advantages-header-text">Diligence</h3>
               <p class="paragraph">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -134,7 +134,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="title">Technologies</h3>
+              <h3 class="title advantages-header-text">Technologies</h3>
               <p class="paragraph">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -170,7 +170,7 @@
       <!--/////////////// TEAM (SECTION 4) ///////////////-->
 
       <section class="team-section">
-        <div class="container">
+        <div>
           <h2 class="team-name">Our Team</h2>
           <ul class="team-list container-list">
             <!-- ROW 1 -->
@@ -400,8 +400,8 @@
     <!--/////////////// COSTOMERS (SECTION 5) ///////////////-->
 
     <section class="costomers">
-      <div class="container">
-        <h2 class="third-section-title">Costomers</h2>
+      <div class="container costomers-list-gap">
+        <h2 class="third-section-title advantages-header-text">Costomers</h2>
         <ul class="costomers-container">
           <li class="costomers-item">
             <a class="costomers-link" href="#">
@@ -457,7 +457,7 @@
     <!-- FOOTER -->
     <footer class="foot">
       <div class="container footer-container">
-        <div>
+        <div class="footer-text-container">
           <a class="logo-bottom" href="">
             <span class="web-bottom">web</span>
             <span class="studio-bottom">studio</span>
@@ -506,10 +506,10 @@
         </div>
 
         <!-- нижня -->
-        <form class="footer-form-section">
-          <label>
+        <form class="form-ppp">
+          <label class="footer-block">
             <span class="input-text-footer">Subscribe</span>
-            <div class="footer-block">
+            <div>
               <div class="modal-form-input-wrapper footer">
                 <input
                   type="email"
@@ -518,10 +518,6 @@
                   required
                   placeholder="E-mail"
                 />
-
-                <!-- <svg class="modal-form-input-icon" width="18" height="24">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg> -->
               </div>
 
               <div class="form-button-footer">
